@@ -13,38 +13,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bg-grey-light">
 
     <!-- header -->
-    <header class="border-b border-solid border-grey-dark">
-        <div class="container mx-auto my-3 flex justify-between">
-            <div class="w-1/2 flex items-center">
-                <a href="#" class="no-underline font-bold text-grey-darker mr-8">
+    <header class="bg-white border-b border-solid border-grey-dark">
+        <div class="container mx-auto flex justify-between">
+            <nav class="w-1/2 flex items-center">
+                <a href="#" class="no-underline font-bold text-grey-darker mr-8 hover:text-blue hover:border-blue border-transparent border-solid border-b-2 py-4">
                     <i class="fab fa-twitter text-blue"></i>
                     Home
                 </a>
-                <a href="#" class="no-underline font-bold text-grey-darker">
+                <a href="#" class="no-underline font-bold text-grey-darker hover:text-blue hover:border-blue border-transparent border-solid border-b-2 py-4">
                     <i class="fas fa-bolt"></i>
                     Moments
                 </a>
-            </div>
+            </nav>
 
             <div class="w-1/2 flex justify-end items-center text-grey-dark">
                 <form class="inline-block mr-4">
                     <div class="relative">
-                        <input class="border border-blue border-solid w-52 px-2 py-2 rounded-full outline-none text-xs" type="text" placeholder="Search Twitter">
+                        <input class="border border-blue border-solid w-52 px-2 py-2 rounded-full outline-none text-xs bg-grey-lightest" type="text"
+                            placeholder="Search Twitter">
                         <span class="flex items-center absolute pin-r pin-y mr-3">
                             <i class="fa fa-search"></i>
                         </span>
                     </div>
                 </form>
 
-                <span class=" text-xs font-light mr-1">
+                <a class=" text-xs font-light mr-1 no-underline hover:underline">
                     Have an account?
-                </span>
-                <span class="font-bold">Log in
-                    <i class="fas fa-caret-down"></i>
-                </span>
+                    <span class="font-bold">Log in
+                        <i class="fas fa-caret-down"></i>
+                    </span>
+                </a>
             </div>
 
         </div>
@@ -52,11 +53,51 @@
     </header>
     <!-- end of header -->
 
-    <!-- hero -->
-    <div class="hero">
-        <img src="images/hero.png" alt="hero">
+    <!-- banner -->
+    <div class="banner bg-cover">
     </div>
-    <!-- end of hero -->
+    <!-- end of banner -->
+
+    <!-- navigation -->
+    <div class="nav-section bg-white">
+        <div class="container mx-auto relative flex">
+            <div class="w-1/4">
+                <img src="images/johnwick_avatar.png" class="rounded-full border-white border-4 absolute pin-t pin-l -mt-20 h-48 w-48">
+            </div>
+            <div class="w-1/2">
+                <ul class="list-reset flex text-center ">
+                    <li class="mr-6 py-4 px-2 border-solid border-b-2 border-blue">
+                        <a href="#" class="no-underline text-grey-darker">
+                            <div class="mb-1 text-sm font-bold">Tweets</div>
+                            <span class="font-bold text-lg text-blue">202</span>
+                        </a>
+                    </li>
+                    <li class="mr-6 py-4 px-2 border-transparent border-solid border-b-2 hover:border-blue">
+                        <a href="#" class="no-underline text-grey-darker">
+                            <div class="mb-1 text-sm font-bold">Following</div>
+                            <span class="font-bold text-lg">26</span>
+                        </a>
+                    </li>
+                    <li class="mr-6 py-4 px-2 border-transparent border-solid border-b-2 hover:border-blue">
+                        <a href="#" class="no-underline text-grey-darker">
+                            <div class="mb-1 text-sm font-bold">Followers</div>
+                            <span class="font-bold text-lg hover:text-blue">2,002</span>
+                        </a>
+                    </li>
+                    <li class="mr-6 py-4 px-2 border-transparent border-solid border-b-2 hover:border-blue">
+                        <a href="#" class="no-underline text-grey-darker">
+                            <div class="mb-1 text-sm font-bold">Likes</div>
+                            <span class="font-bold text-lg hover:text-blue">1,448</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-1/4 flex flex-row items-center justify-end">
+                <a href="#" class="font-semibold rounded-full w-32  no-underline border-blue border text-blue text-center py-2 hover:bg-blue-lighter">Follow</a>
+            </div>
+        </div>
+    </div>
+    <!-- end of navigation -->
 
 </body>
 

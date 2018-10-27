@@ -1,3 +1,12 @@
 .w-52 {
     width: 14rem;
 }
+
+.banner {
+    background: url('../images/banner.png');
+    min-height: 443px;
+}
+
+.nav-section ul li:hover a > span {
+    color: #3490dc;
+}

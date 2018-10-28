@@ -14,13 +14,29 @@
     height: 5rem;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+}
 .banner {
     background: url('../images/banner.png');
     min-height: 443px;
+
+    position: sticky;
+    top: -300px;
+    z-index: -5;
 }
 
+.nav-section {
+    position: sticky;
+    top: 90px;
+}
 .nav-section ul li:hover a > span {
     color: #3490dc;
+}
+
+.main-content > * {
+    z-index: -10;
 }
 
 .post_img {
@@ -33,4 +49,23 @@
 }
 #signup-btn:hover {
     background: #1DA1F2;
+}
+
+.slideUp {
+    transform: translateY(-300px);
+    transition: transform .6s ease-in-out;
+}
+
+.slideDown {
+    transform: translateY(0);
+    transition: transform .4s ease-in-out;
+}
+
+.nav-header-slideUp {
+    transform: translateY(0);
+    transition: transform .4s ease-in-out;
+}
+.nav-header-slideDown {
+    transform: translateY(100px);
+    transition: transform .3s ease-in-out;
 }

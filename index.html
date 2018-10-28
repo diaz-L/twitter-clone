@@ -59,10 +59,25 @@
     <!-- end of banner -->
 
     <!-- navigation -->
-    <div class="nav-section bg-white">
-        <div class="container mx-auto relative flex">
+    <div class="nav-section bg-white relative">
+        <div class="container mx-auto overflow-hidden flex">
             <div class="w-1/4">
-                <img src="images/johnwick_avatar.png" class="rounded-full border-white border-4 absolute pin-t pin-l -mt-20 h-48 w-48">
+                <img id="avatar" src="images/johnwick_avatar.png" class="rounded-full border-white border-4 absolute pin-t -mt-20 h-48 w-48 z-10">
+
+                <div class="nav-header py-3 flex">
+                    <div class="w-1/5 mr-2">
+                        <img src="images/johnwick_avatar.png" alt="avatar" class="rounded-full h-12 w-12">
+                    </div>
+                    <div class="w-4/5">
+                        <div>
+                            <a id="profile-header " href="#" class="no-underline hover:underline text-black text-lg font-bold">John Wick: Chapter 3</a>
+                        </div>
+                        <div class="mb-4">
+                            <a href="#" class="no-underline hover:underline text-blue text-xs font-semibold">@JohnWickUpdates</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="w-1/2">
                 <ul class="list-reset flex text-center ">
@@ -100,11 +115,11 @@
     <!-- end of navigation -->
 
     <!-- main content -->
-    <div class="container mx-auto flex mt-2">
+    <div class="main-content container mx-auto flex mt-2">
         <!-- start left content -->
         <div class="w-1/4 mt-16 mr-4">
             <div>
-                <a href="#" class="no-underline hover:underline text-black text-xl font-bold">John Wick: Chapter 3</a>
+                <a id="profile-header " href="#" class="no-underline hover:underline text-black text-xl font-bold">John Wick: Chapter 3</a>
             </div>
             <div class="mb-4">
                 <a href="#" class="no-underline hover:underline text-grey-darker text-xs">@JohnWickUpdates</a>
@@ -495,6 +510,8 @@
         <!-- end right content -->
     </div>
     <!-- end of main -->
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

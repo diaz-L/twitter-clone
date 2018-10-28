@@ -2,6 +2,18 @@
     width: 14rem;
 }
 
+.w-1\/8 {
+    width: calc(1/8 * 100%);
+}
+
+.w-7\/8 {
+    width: calc(7/8 * 100%);
+}
+
+.h-20 {
+    height: 5rem;
+}
+
 .banner {
     background: url('../images/banner.png');
     min-height: 443px;
@@ -9,4 +21,16 @@
 
 .nav-section ul li:hover a > span {
     color: #3490dc;
+}
+
+.post_img {
+    height: 450px;
+    overflow: hidden;
+}
+
+#signup-btn {
+    background: #4AB3F4;
+}
+#signup-btn:hover {
+    background: #1DA1F2;
 }

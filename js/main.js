@@ -5,12 +5,10 @@ let navHeader = document.querySelector('.nav-header');
 let avatar = document.getElementById('avatar');
 
 function doesAnimate(posY) {
-    console.log(posY);
     if (posY <= 91) {
         avatar.classList.add('slideUp');     //add slide up animation
         avatar.classList.remove('slideDown');   //remove slideDown class if present
 
-        // navHeader.classList.replace('hidden', 'flex');
         navHeader.classList.add('nav-header-slideUp');
         navHeader.classList.remove('nav-header-slideDown');
     } else if (posY >= 80) {
@@ -19,11 +17,11 @@ function doesAnimate(posY) {
 
         navHeader.classList.add('nav-header-slideDown');
         navHeader.classList.remove('nav-header-slideUp');
-        // navHeader.classList.replace('flex', 'hidden');
     }
 }
 
 window.addEventListener('scroll', function (e) {
+
     last_knowY = nav.getBoundingClientRect().y;
 
     if (!ticking) {

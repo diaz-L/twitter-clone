@@ -17,6 +17,7 @@
 header {
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 .banner {
     background: url('../images/banner.png');
@@ -24,19 +25,20 @@ header {
 
     position: sticky;
     top: -300px;
-    z-index: -5;
+    z-index: 1;
 }
 
 .nav-section {
     position: sticky;
     top: 90px;
+    z-index: 10;
 }
 .nav-section ul li:hover a > span {
     color: #3490dc;
 }
 
-.main-content > * {
-    z-index: -10;
+.main-content {
+    z-index: -5;
 }
 
 .post_img {
